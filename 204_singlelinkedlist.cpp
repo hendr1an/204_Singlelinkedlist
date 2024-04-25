@@ -12,10 +12,22 @@ Node* START = NULL;
 void addnode() {
     int nim;
     string nama;
-    Node* nodebaru = new Node();
+    Node* nodeBaru = new Node();
     cout << "masukkan NIM: ";
     cin >> nim;
     cout << "masukkan Nama: ";
     cin >> nama;
-    
-}
+    nodeBaru->noMhs = nim;
+    nodeBaru->name = nama;
+
+    if (START == NULL || nim <= START->noMhs) {
+        if (START != NULL && nim == START->noMhs)
+        {
+            cout << "NIM sudah ada" <<endl;
+            return;
+        }
+
+        nodeBaru->next = START;
+        START = nodeBaru;
+        return;
+    }
