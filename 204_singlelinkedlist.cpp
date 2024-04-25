@@ -8,3 +8,14 @@ struct Node {
 };
 
 Node* START = NULL;
+
+void addnode() {
+    int nim;
+    string nama;
+    Node* nodebaru = new Node();
+    cout << "masukkan NIM: ";
+    cin >> nim;
+    cout << "masukkan Nama: ";
+    cin >> nama;
+    
+}
