@@ -100,8 +100,8 @@ void traverse() {
     else {
         Node* currentNode = START;
         while (currentNode != NULL) {
-            cout << "NIM: << currentNode->noMhs << " " << currentNode->name << endl;
-            currentNode = currentNode-next;
+            cout << "NIM:" << currentNode->noMhs << ", Nama: " << currentNode->name << endl;
+            currentNode = currentNode->next;
         }
     }   
 }
@@ -112,4 +112,4 @@ void searchData() {
         system("pause");
         system("cls");
         return;
-}
+    }
